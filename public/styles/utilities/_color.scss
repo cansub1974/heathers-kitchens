@@ -1,0 +1,38 @@
+// Heading Color
+$heading: #252525;
+
+// Text Color
+$text: #6e6e6e;
+
+// Gray Background
+$bg-gray: #f6f9f9;
+
+// Primary Color
+$primary: #bca858;
+
+// White Color
+$white: #ffffff;
+
+// Dark Color
+$dark: #000000;
+
+// Border Color
+$border: #e5e5e5;
+
+// Hover Color
+$hover: #bca858;
+
+// Secondary Color
+$secondary: #acacac;
+
+@function color($color-name) {
+    @return map-get($map: $colors, $key: $color-name)
+}
+
+$colors: (primary: #bca858,
+    primary-light: lighten(#bca858, 40%),
+    primary-dark: darken(#bca858, 40%),
+    accent: #fff6bb,
+    hover: #bca858,
+    secondary: #acacac,
+);
